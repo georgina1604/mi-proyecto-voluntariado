@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;600&display=swap');
+/*
+.color7 { #121e0f };
+.color6 { #1d4417 };
+.color1 { #467a3a };
+.color2 { #679b59 };
+.color3 { #88bc78 };
+.color4 { #a8de98 };
+.color5 { #c9ffb7 };*/
+/*
+.color01 { #457a38 };
+.color02 { #5e9450 };
+.color03 { #77ad67 };
+.color04 { #90c77f };
+.color05 { #a9e197 };*/
+/*
+.color11 { #4a793e };
+.color12 { #789a6a };
+.color13 { #a5bc96 };
+.color14 { #d2ddc2 };
+.color15 { #ffffee };*/
+
+html{
+    /*.color15 { #ffffee } */
+    background-color: #ffffee;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container-header{
+    /*.color12 { #789a6a } */
+    background-color: #789a6a;
+    display: flex;
+    height: 20%;
+    padding: 15px;
+    flex-direction: row;
+}
+
+.container-footer{
+    /*.color7 { #121e0f } */
+    background-color: #121e0f;
+}
+
+.element-logo-header{
+    height: 60%;
+    width: 60%;
+
+}
+.div-subtitle{
+    width: auto;
+    height: 60%;
+}
+.element-div-subtitle{
+    font-size: ;
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-with: 670px) {
+    
+}
+
