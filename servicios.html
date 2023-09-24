@@ -6,97 +6,186 @@
     <meta name="author" content="Georgina Galletto">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Servicios</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
     <link rel="icon" type="image/x-icon" href="css/images/logo-huella-16.png">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
+<!-- para acomodar lineas de codigo shift+alt+f -->
 
 <body>
     <header>
+        <a name="inicio"></a>
         <div class="container-header">
-            <div class="logo-header">
-                <img src="css/images/logo-huella96.png" alt="Logo">
-            </div>
-            <div class="div-subtitle">
-
-                <h3>Educación y consultoría canina</h3>
-            </div>
-            <a name="#inicio"></a>
-            <nav class="menu-seccion">
-                <div class="boton-menu">
-                    <img src="css/images/icons8-menú-32.png" alt="Menú">
-                </div>
-                <a href="/index.html" target="_self">HOME</a>
-                <a href="/servicios.html" target="_self">SERVICIOS</a>
-                <a href="/contacto.html" target="_self">CONTACTO</a>
+            <h2>VÍA<img class="logo-header" src="css/images/logo-huella96.png" alt="Logo">CANINA</h2>
+            <button class="btn-abrir-menu" id="btn-abrir-menu"><i class="bi bi-list"></i></button>
+            <nav class="nav-menu" id="nav-menu">
+                <button class="btn-cerrar-menu" id="btn-cerrar-menu"><i class="bi bi-x-circle-fill"></i></button>
+                <ul class="nav-list"> <!--li*3>a -->
+                    <li><a href="index.html" target="_self">Home</a></li>
+                    <li><a href="servicios.html" target="_self">Servicios</a></li>
+                    <li><a href="contacto.html" target="_self">Contacto</a></li>
+                </ul>
             </nav>
         </div>
     </header>
 
     <main class="container-main">
-        <section class="section-title">
-            <h1>VÍA CANINA</h1>
+        <section class="seccion-title">
+            <h1>Educación y consultoría canina</h1>
         </section>
-        <section class="section-article">
-            <article>
-                <p></p>
-                <p></p>
+
+        <section class="seccion-article-servicios">
+            <article class="servicios-art-1">
+                <div>
+                    <h3>PRIMEROS PASOS PARA ESTABLECER UN VÍNCULO FUERTE</h3>
+                    <p>Los perros activos dependen de su entrenamiento para desarrollar vínculos fuertes con quienes
+                        trabajarán,
+                        aprender de forma segura habilidades nuevas y rendir al máximo. Sentar las bases durante la
+                        etapa de
+                        cachorro
+                        es importante para que en el futuro puedan desarrollar las habilidades más complejas que se
+                        esperan
+                        de los perros de trabajo, deporte y servicio.</p>
+                </div>
+                <div>
+                    <img src="css/images/perros-ninos-fb.png" alt="Niño juganco con perro">
+                </div>
             </article>
-            <article>
-                <p></p>
-                <p></p>
+
+            <article class="servicios-art-2">
+                <div>
+                    <img src="css/images/entrenamiento-conductual.jpg" alt="Cachorro">
+                </div>           
+                <div>
+                    <h3>ENTRENAMIENTO CONDUCTUAL: DE 2 A 6 MESES</h3>
+                <p>Ya sea en casa o en una escuela para cachorros, el entrenamiento conductual ayuda a generar confianza
+                    entre el cachorro
+                    y el humano y enseña a los cachorros que el entrenamiento es divertido y emocionante. En el
+                    entrenamiento conductual,
+                    el cachorro aprende comportamientos sociales, obediencia y a ganar confianza Durante este tiempo,
+                    también podés establecer un vínculo con tu cachorro activo.
+                    Las sesiones de entrenamiento deben ser frecuentes y breves, y recordá divertirte.</p>
+                </div>
+                
             </article>
-            <article>
-                <p></p>
-                <p></p>
+
+            <article class="servicios-art-1">
+                <div>
+                    <h3>LA EDAD PARA UN ENTRENAMIENTO ADAPTADO ES VARIABLE, AUNQUE NO ES RECOMENDABLE ANTES DE LOS 6
+                        MESES</h3>
+                    <p>En las sesiones de entrenamiento adaptado se introducen poco a poco las habilidades necesarias
+                        para
+                        las actividades (como agility o el pastoreo),
+                        sin que ello suponga ningún riesgo físico para los huesos, las articulaciones y los músculos en
+                        desarrollo de los cachorros. Los entrenadores pueden
+                        empezar a incorporar el acondicionamiento físico para ayudar a los cachorros a desarrollar la
+                        fuerza
+                        que necesitan para realizar las actividades deportivas.
+                        Sea cual sea la actividad que quieras compartir con el cachorro, el entrenamiento adaptado
+                        estimulará la mente y el cuerpo y los ayudará a llevar una vida feliz y saludable.</p>
+                </div>
+                <div>
+                    <img src="css/images/entrenamiento.jpg" alt="Perro entrenando">
+                </div>
+                
+            </article>
+
+            <article class="servicios-art-2">
+                <div>
+                    <img src="css/images/entrenamiento-centrado.jpg" alt="Perro de rescate">
+                </div>
+                
+                <div>
+                    <h3>LA EDAD PARA UN ENTRENAMIENTO CENTRADO EN OBJETIVOS CONCRETOS VARÍA, PERO NO SE RECOMIENDA ANTES DE
+                    LOS 12 MESES</h3>
+                <p>El entrenamiento orientado en objetivos concretos consiste en enseñarle a un perro adulto a realizar
+                    tareas específicas relacionadas con una actividad (por ejemplo, agility).
+                    La decisión de cuándo comenzar el entrenamiento dependerá de la raza del cachorro y de los
+                    fundamentos de su entrenamiento conductual.
+                    Consultá con el veterinario antes de comenzar un programa de entrenamiento.</p>
+                </div>
+                
             </article>
         </section>
-        <section class="section-tips">
-            <article>
-                <p></p>
-                <p></p>
-            </article>
-            <article>
-                <p></p>
-                <p></p>
-            </article>
-            <article>
-                <p></p>
-                <p></p>
-            </article>
+
+        <div class="tips-title">
+            <h2>Artículos destacados</h2>
+        </div>
+
+        <section class="seccion-tips">
+
+            <div class="card" style="width: 18rem;">
+                <img src="https://kontrolcan.com.ar/web/wp-content/uploads/2023/04/juego-perro-new.jpg"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">El juego con el perro</h5>
+                    <p class="card-text">¿Sos de esos dueños que llevan a su perro al parque únicamente a que explore el
+                        césped
+                        y a que juegue con otros perros, mientras vos hablás con los otros propietarios de perros o te
+                        sentás a revisar las redes sociales en tu teléfono celular?</p>
+                    <a href="https://kontrolcan.com.ar/el-juego/" class="btn btn-primary">Leer más</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="https://cdn.royalcanin-weshare-online.io/GFZXRHQBBKJuub5qrpaW/v5/eukanuba-hub-activities-article-activities-article-3-crop?w=1440&fm=jpg&auto=compress"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Cómo andar en bicicleta con tu perro</h5>
+                    <p class="card-text">Lo más importante que hay que tener en cuenta a la hora de andar en bicicleta
+                        con un perro es la seguridad: la tuya, la del perro y la de las personas que te rodean.</p>
+                    <a href="https://www.eukanuba.com/ar/health-and-fitness/health-and-fitness-articles/how-to-bike-with-your-dog"
+                        class="btn btn-primary">Leer más</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="https://www.hogarmania.com/archivos/202010/comer-dia-perro-portada-668x400x80xX-1.jpg"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">¿Cuántas veces al día debe comer un perro?</h5>
+                    <p class="card-text">La cantidad de comida de los perros es muy importante. ¡Es una de las claves de
+                        su salud!</p>
+                    <a href="https://www.hogarmania.com/mascotas/perros/alimentacion/cuantas-veces-debe-comer-perro.html"
+                        class="btn btn-primary">Leer más</a>
+                </div>
+            </div>
         </section>
+        <div class="inicio">
+            <a href="#inicio"><img src="css/images/icons8-flecha-arriba-32.png" alt=""></a>
+        </div>
     </main>
 
-    <footer>
-        <div class="container-footer">
-            <div class="logo-footer">
-                <img src="css/images/logo-huella-16.png" alt="Logo">
-            </div>
-            <div class="div-title-footer">
-                <h3>VÍA CANINA</h3>
-                <h6>Educación y consultoría canina</h6>
-            </div>
-            <nav class="menu-seccion-footer">
-                <a href="/index.html" target="_self">HOME</a>
-                <a href="/servicios.html" target="_self">SERVICIOS</a>
-                <a href="/contacto.html" target="_self">CONTACTO</a>
-            </nav>
-            <div class="bnt-redes">
-                <a href="">
-                    <img src="css/images/logo-instagram-32.png" alt="Logo Instagram">
-                </a>
-                <a href="">
-                    <img src="css/images/logo-whatsapp-32.png" alt="Logo Whatsapp">
-                </a>
-            </div>
-            <div>
-                <a href="#inicio">
-                    <img src="" alt="Flecha arriba">
-                </a>
-            </div>
-        </div>
-        
-    </footer>
+    <footer class="container-footer">
 
+        <div class="div-footer">
+            <h3>VÍA<img class="logo-footer" src="css/images/logo-huella96.png" alt="Logo">CANINA</h3>
+            <h6>Educación y consultoría canina</h6>
+        </div>
+        <nav class="menu-seccion-footer" id="menu-seccion-footer">
+            <ul class="nav-footer">
+                <li><a href="index.html" target="_self">Home</a></li>
+                <li><a href="servicios.html" target="_self">Servicios</a></li>
+                <li><a href="contacto.html" target="_self">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="div-redes">
+            <h6>Podes contactarnos por</h6>
+            <div class="btn-redes">
+                <a href="https://www.instagram.com/via_canina/" target="_blank"><img class="logo-redes"
+                        src="css/images/icons8-instagram2.svg" alt="Logo Instagram"></a>
+                <a href="https://wa.me/5493518652449?text=Hola quiero información sobre los servicios"
+                    target="_blank"><img class="logo-redes" src="css/images/icons8-whatsapp.svg"
+                        alt="Logo Whatsapp"></a>
+            </div>
+
+        </div>
+
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="modulo_js/main.js"></script>
 </body>
 
 </html>
