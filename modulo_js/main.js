@@ -18,8 +18,8 @@ cerrarMenu.addEventListener("click", () => {
 
 let imagenes = [
     "css/images/border-coli-corriendo.jpeg",
-    "css/images/perros-ninos-fb.png",
-    "css/images/mordiendo-zapatilla.jpg"
+    "css/images/perro-y-nina.jpg",
+    "css/images/socializacion-perro.jpg"
 ];
 document.imagen.src = imagenes[0];
 

@@ -9,14 +9,15 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
     <link rel="icon" type="image/x-icon" href="css/images/logo-huella-16.png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 
 <body>
     <header>
         <a name="inicio"></a>
         <div class="container-header">
-            <h2>VÍA<img class="logo-header" src="./css/images/logo-huella96.png" alt="Logo">CANINA</h2>            
+            <h2>VÍA<img class="logo-header" src="./css/images/logo-huella96.png" alt="Logo">CANINA</h2>
             <button class="btn-abrir-menu" id="btn-abrir-menu"><i class="bi bi-list"></i></button>
             <nav class="nav-menu" id="nav-menu">
                 <button class="btn-cerrar-menu" id="btn-cerrar-menu"><i class="bi bi-x-circle-fill"></i></button>
@@ -33,35 +34,38 @@
         <section class="seccion-title">
             <h1>Educación y consultoría canina</h1>
         </section>
+        
         <section class="container-form">
-            <form action="https://formsubmit.co/your@email.com" method="POST">
+            <form action="https://formsubmit.co/georginagalletto@gmail.com" method="POST">
                 <h2>Contacto</h2>
                 <br>
                 <div class="div-input-grupo">
                     <label for="nombre">Nombre y apellido</label>
-                    <input type="text" name="nombre" id="nombre" />
-
+                    <input type="text" name="nombre" id="nombre" required/>
+                    <span></span>
                     <label for="nombre-mascota">Nombre de tu mascota</label>
-                    <input type="text" name="nombre-mascota" id="nombre-mascota" />
-
+                    <input type="text" name="nombre-mascota" id="nombre-mascota" required/>
+                    <span></span>
                     <label for="email">Correo electrónico</label>
-                    <input type="email" name="email" id="email" />
-
+                    <input type="email" name="email" id="email" required/>
+                    <span></span>
                     <label for="telefono">Teléfono</label>
                     <input type="tel" name="telefono" id="telefono" />
-
+                    <span></span>
                     <label for="provincia">Provincia</label>
                     <input type="text" name="provincia" id="provincia" />
-
+                    <span></span>
                     <label for="consulta">Consulta</label>
-                    <textarea name="consulta" id="consulta" cols="30" rows="5" placeholder="Mensaje"></textarea>
-
+                    <textarea name="consulta" id="consulta" cols="30" rows="5" placeholder="Mensaje" required></textarea>
+                    <span></span>
                     <label for="conocernos">Cómo nos conociste</label>
-                    <select id="conocernos" name="conocernos">
+                    <select id="conocernos" name="conocernos" required>
+                        <option selected="" value="default">Seleccione una opción</option>
                         <option value="instagram">Por Instagram</option>
                         <option value="internet">Navegando por internet</option>
                         <option value="amigo-a">Por un amigo/a</option>
                     </select>
+                    <span></span>
                     <br>
                     <div class="condiciones">
                         <a href="#">Política de privacidad</a>
@@ -74,19 +78,28 @@
             </form>
         </section>
 
-        <section class="section-coments">
-            <article>
-                <p> opiniones de clientes</p>
-                <cite>blablabla</cite>
-            </article>
-            <article>
-                <p>opiniones de clientes</p>
-                <cite>blabla bla</cite>
-            </article>
-            <article>
-                <p>opiniones de clientes</p>
-                <cite>bla bla bla</cite>
-            </article>
+        <section class="seccion-comentarios">
+            <div class="card-comentarios" style="width: 18rem;">
+                <img src="css/images/perro-con-dueños.jpg" class="card-img" alt="...">
+                <h5>Mateo y Silvina, de Córdoba capital</h5>
+                <div class="card-texto">
+                    <p><i>"Gracias por ayudarnos a conectar con nuestro perro, ahora podemos disfrutar de un paseo y sentirnos tranquilos"</i></p>
+                </div>
+            </div>
+            <div class="card-comentarios" style="width: 18rem;">
+                <img src="css/images/nina-abraza-mascota.jpg" class="card-img" alt="...">
+                <h5>Micaela, de Alta Gracia</h5>
+                <div class="card-texto">
+                    <p><i>"Te conocí por una amiga que entrenó con vos y la verdad que le agradezco que te recomendara. Fue un antes y un después con mi perro!! Me encantó tu forma de trabajar."</i></p>
+                </div>
+            </div>
+            <div class="card-comentarios" style="width: 18rem;">
+                <img src="css/images/dueña-con-mascota.webp" class="card-img" alt="...">
+                <h5>Natalia, de Río Segundo</h5>
+                <div class="card-texto">
+                    <p><i>"Admiro tu paciencia para explicar los ejercicios, estoy muy agradecida por todo lo que me enseñaste."</i></p>
+                </div>
+            </div>
         </section>
         <div class="inicio">
             <a href="#inicio"><img src="css/images/icons8-flecha-arriba-32.png" alt=""></a>
@@ -109,17 +122,22 @@
         <div class="div-redes">
             <h6>Podes contactarnos por</h6>
             <div class="btn-redes">
-                <a href="https://www.instagram.com/via_canina/" target="_blank"><img class="logo-redes" src="css/images/icons8-instagram2.svg" alt="Logo Instagram"></a>
-                <a href="https://wa.me/5493518652449?text=Hola quiero información sobre los servicios" target="_blank"><img class="logo-redes" src="css/images/icons8-whatsapp.svg" alt="Logo Whatsapp"></a>
+                <a href="https://www.instagram.com/via_canina/" target="_blank"><img class="logo-redes"
+                        src="css/images/icons8-instagram2.svg" alt="Logo Instagram"></a>
+                <a href="https://wa.me/5493518652449?text=Hola quiero información sobre los servicios"
+                    target="_blank"><img class="logo-redes" src="css/images/icons8-whatsapp.svg"
+                        alt="Logo Whatsapp"></a>
             </div>
 
         </div>
-        
+
     </footer>
 
     <script src="modulo_js/main.js"></script>
     <script src="modulo_js/formulario.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 
 </body>
 

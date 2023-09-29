@@ -26,6 +26,7 @@
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0; 
+    box-sizing: border-box;
 }
 
 /* seccion HEADER*/
@@ -91,16 +92,17 @@
     width: 100%;
     height: 700px;
     background-size: cover;
-    position: relative;
+    opacity: 5.5;
+    /*position: relative; */
 }
-.seccion-title:before{
+/* .seccion-title:before{
     content: "";
     width: 100%;
     height: 100%;
     background-color: #010b12;
     position: absolute;
     opacity: 0.5;
-}
+} */
 .seccion-title h1{
     font-size: 4rem;
     text-align: center;
@@ -172,37 +174,53 @@
 
 /* seccion articlulos de SERVICIOS*/
 .seccion-article-servicios{
-    margin: 10% 5%;
-}
-.servicios-art-1{
+    margin: 5% 5%;
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: stretch;
-    height: 500px;
-    width: 100%;
-    gap: 40px;
-    margin-top: 35px;
+    gap: 20px;
 }
-img{
-    width: 100%;
-}
-.servicios-art-2{
+.seccion-article-servicios .servicios-art{
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+    position: relative;
+    background-color: #eaf7d6;
+    border-radius: 10px;
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: stretch;
-    height: 500px;
-    width: 100%;
-    gap: 40px;
+    justify-content: space-between;
+    align-items: start;
+    width: 80%;
+    gap: 30px;
+    margin: 15px auto;
 }
+
+.caja-texto{
+    text-align: justify;
+    padding: 20px;
+    color: #283629;
+    
+}
+.seccion-article-servicios .servicios-art img.caja-imagen{
+    width: 420px;
+    height: 320px;
+    object-fit: cover;
+    box-shadow: 0 0 20PX rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    align-items: center;
+    margin: 15px 15px;
+    float: right;
+
+}
+/*------------------------------------------------------*/
+
+/* articulos destacados*/
 .tips-title{
     background-color: #1c1c1c;
 }
 .tips-title h2{
-    font-size: 2rem;
+    font-size: 3rem;
     letter-spacing: 2px;
     text-align: center;
     padding: 20px;
@@ -222,7 +240,7 @@ img{
     font-size: medium;
 }
 .card-body{
-    background-color: #f7eddb;
+    background-color: #f1edc0;
     border-radius: 5px;
 }
 .card-text{
@@ -277,7 +295,7 @@ input, textarea{
 input{
     height: 15px;
 }
-select{
+select > option{
     padding: 17px 25px;
     border-radius: 10px;
     margin-bottom: 15px;
@@ -314,8 +332,55 @@ select{
 .btn-enviar:hover{
     background-color: #09ed64;
 }
+/* validaciones*/
+.error{
+    color: rgb(201, 10, 10);
+    display: block;
+    font-size: x-small;
+    margin: 8px 0px;
+    text-align: right;
+}
+.invalid{
+    border-color: 2px solid rgb(201, 10, 10);
+    box-shadow: 0 0 10px rgb(201, 10, 10);
+}
 /*---------------------------------*/
-
+ 
+/* comentarios*/
+.seccion-comentarios{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 20px;
+}
+.seccion-comentarios .card-comentarios{
+    background:#d7f8e4;
+    margin: 3rem;
+    padding: 1rem;
+    text-align: center;
+    position: relative;
+    flex: 1 1 30rem;
+    border-radius: 15px;
+    color: #283629;
+    
+}
+.seccion-comentarios .card-comentarios .card-img{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+    border-radius: 60%;
+    object-fit: cover;
+    height: 10rem;
+    width: 10rem;
+    margin-top: 2rem;
+}
+.seccion-comentarios .card-comentarios h5{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+.seccion-comentarios .card-comentarios .card-texto{
+    padding: 0 1rem;
+}
+/*----------------------------------*/
 
 /* seccion FOOTER*/
 .container-footer{
@@ -399,8 +464,10 @@ a .logo-redes:hover{
 }
 /*---------------------------------*/
 
+
+
 /* Tamaño MOBILE*/
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 660px) {
 
     /* seccion HEADER */
     header{
@@ -413,8 +480,8 @@ a .logo-redes:hover{
     .logo-header{
         max-width: 2rem;
     }
-    .subtitulo{
-        display: none;
+    .container-header h2{
+        font-size: 2rem;
     }
     /*-------------------------*/
 
@@ -460,16 +527,73 @@ a .logo-redes:hover{
         background-color: #d2ddc2;
         padding: 2rem;
         box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+        
     }
     .nav-list{
         flex-direction: column;
         align-items: end;
+        
     }
 
     .nav-menu.visible{
         visibility: visible;
     }
     /*---------------------------*/
+
+    /**/
+    .seccion-title{
+        width: 100%;
+        height: 250px;
+        background-size: cover;
+        /* position: relative; */
+    }
+    /* .seccion-title:before{
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-color: #010b12;
+        position: absolute;
+        opacity: 0.5;
+    } */
+
+    /* seccion SERVICIOS */
+    .servicios-art{
+        flex-direction: column;
+        justify-content: center;
+        gap: 0;
+    }
+    .caja-texto{
+        text-align: justify;
+        padding: 30px 30px 0px 30px;
+        margin-bottom: 0;
+        height: fit-content;
+    }
+    .caja-texto h3{
+        font-size: large;
+        margin-bottom: 15px;
+    }
+    .caja-texto p{
+        font-size: small;
+    }
+    .seccion-article-servicios .servicios-art img.caja-imagen{
+        width: 350px;
+        height: 230px;
+        align-items: center;
+        margin-top: 0;
+    }
+    .tips-title h2{
+        font-size: x-large;
+    }
+    /*-----------------------*/
+
+    /*comentarios*/
+    .seccion-comentarios{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
 
     /* seccion FOOTER*/
 
@@ -511,6 +635,7 @@ a .logo-redes:hover{
     }
     input{
         padding: 10px;
+        
     }
     label{
         font-size: small;
@@ -519,8 +644,3 @@ a .logo-redes:hover{
 
 
 }
-
-
-
-
-
